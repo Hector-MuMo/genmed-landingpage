@@ -78,7 +78,7 @@ const Navigation = () => {
         <NavbarItem>
           <Button
             as={Link}
-            href="#"
+            href="/google-calendar"
             variant="solid"
             className="bg-green-500 text-amber-50"
           >

@@ -20,7 +20,7 @@ const Contacto = () => {
           <Button
             startContent={<Image alt="pencil" src={pencil} width={20} />}
             as={Link}
-            href="#"
+            href="/google-calendar"
             variant="solid"
             size="lg"
             className="bg-green-500 text-amber-50 mt-5 mb-3"

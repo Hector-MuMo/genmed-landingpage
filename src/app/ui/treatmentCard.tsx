@@ -20,7 +20,7 @@ const TreatmentCard = ({img, title, children, index}: TreatmentCardProps) => {
           </p>
             <Button
             as={Link}
-            href="#"
+            href="/google-calendar"
             variant="solid"
             className={`mt-3 ${ index && index % 2 === 0 ? "bg-white text-green-500" : "bg-green-500 text-amber-50" }`}
           >

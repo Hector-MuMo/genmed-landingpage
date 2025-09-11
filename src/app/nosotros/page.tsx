@@ -31,9 +31,9 @@ const Nosotros = () => {
         </div>
         <div className="hidden sm:grid sm:grid-cols-3">
           <div className="flex justify-center items-center">
-          <h2 className="mb-8 sm:text-4xl lg:text-5xl text-center text-stone-600 sm:px-5">
-            Más de [X] Años Creando Sonrisas
-          </h2>
+            <h2 className="mb-8 sm:text-4xl lg:text-5xl text-center text-stone-600 sm:px-5">
+              Más de [X] Años Creando Sonrisas
+            </h2>
           </div>
           <div className="sm:bg-[url(../../public/Heroimg-us.png)] sm:bg-cover bg-center sm:h-svh">
             <h1
@@ -43,18 +43,18 @@ const Nosotros = () => {
             </h1>
           </div>
           <div className="sm:flex sm:justify-center sm:items-center sm:text-md sm:px-5">
-          <p className="text-stone-900 text-justify">
-            Lorem ipsum dolor sit amet consectetur. Gravida nunc in porttitor ut
-            mauris elit nibh. Netus viverra adipiscing mus dui. Luctus eget
-            mauris gravida nibh elementum risus. Nunc bibendum eu potenti
-            iaculis duis amet nunc. Natoque euismod ullamcorper sit aliquet
-            mauris. Hendrerit mauris scelerisque risus eget. Viverra ut egestas
-            dictum aliquet laoreet pulvinar nunc ultrices dictum. Lobortis lorem
-            et vitae lobortis tortor fermentum eget eu. Natoque aenean aliquam
-            enim orci tincidunt id habitasse id ut. Tempor porta leo fusce
-            viverra tortor tristique integer ultricies nisl. Eleifend amet
-            euismod cursus quis ut nisi egestas.
-          </p>
+            <p className="text-stone-900 text-justify">
+              Lorem ipsum dolor sit amet consectetur. Gravida nunc in porttitor
+              ut mauris elit nibh. Netus viverra adipiscing mus dui. Luctus eget
+              mauris gravida nibh elementum risus. Nunc bibendum eu potenti
+              iaculis duis amet nunc. Natoque euismod ullamcorper sit aliquet
+              mauris. Hendrerit mauris scelerisque risus eget. Viverra ut
+              egestas dictum aliquet laoreet pulvinar nunc ultrices dictum.
+              Lobortis lorem et vitae lobortis tortor fermentum eget eu. Natoque
+              aenean aliquam enim orci tincidunt id habitasse id ut. Tempor
+              porta leo fusce viverra tortor tristique integer ultricies nisl.
+              Eleifend amet euismod cursus quis ut nisi egestas.
+            </p>
           </div>
         </div>
       </main>

@@ -109,7 +109,7 @@ const Contacto = () => {
           </div>
           <div className="sm:bg-[url(../../public/Heroimg-contact.png)] sm:bg-cover bg-center sm:h-svh"></div>
           <div className="sm:flex sm:flex-col sm:justify-center sm:items-center">
-            <div className="p-4">
+            <div className="flex flex-col justify-center items-center p-4">
               <h3 className="text-2xl text-stone-600 text-center">Ubicación</h3>
               <p className="text-stone-800 text-center mb-3">
                 Estamos ubiacos en Calle Miguel Lira y Ortega 23b, Centro, 90000
@@ -130,7 +130,7 @@ const Contacto = () => {
               <p className="text-stone-900 font-bold text-center mt-5">
                 Llamanos o mandanos un mensaje
               </p>
-              <div className="flex justify-between pt-5 pb-3">
+              <div className="w-full lg:w-[250px]  flex justify-between pt-5 pb-3">
                 <Link isExternal href="tel:+522464594943">
                   <Image alt="phone" src={phone} width={35} />
                 </Link>

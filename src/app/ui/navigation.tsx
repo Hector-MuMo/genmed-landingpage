@@ -37,7 +37,7 @@ const Navigation = () => {
     <Navbar isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
         <NavbarBrand>
-          <Link href="/">
+          <Link href="/" className="flex justify-center items-center">
             <MedLogo />
             <p className="font-bold text-stone-900">GenMed</p>
           </Link>
@@ -47,7 +47,7 @@ const Navigation = () => {
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link
-            color={pathname === "/nosotros" ? "success" : "foreground"}
+            className={`${pathname === `/nosotros` ? "text-green-500" : "text-stone-800"}`}
             aria-current="page"
             href="/nosotros"
           >
@@ -56,7 +56,7 @@ const Navigation = () => {
         </NavbarItem>
         <NavbarItem>
           <Link
-            color={pathname === "/servicios" ? "success" : "foreground"}
+            className={`${pathname === `/servicios` ? "text-green-500" : "text-stone-800"}`}
             aria-current="page"
             href="/servicios"
           >
@@ -65,7 +65,7 @@ const Navigation = () => {
         </NavbarItem>
         <NavbarItem>
           <Link
-            color={pathname === "/contacto" ? "success" : "foreground"}
+            className={`${pathname === `/contacto` ? "text-green-500" : "text-stone-800"}`}
             aria-current="page"
             href="/contacto"
           >

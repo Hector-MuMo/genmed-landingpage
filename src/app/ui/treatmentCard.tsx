@@ -1,6 +1,6 @@
 import { Button } from '@heroui/button';
-import { Link } from '@heroui/link';
 import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
 import React, { ReactNode } from 'react'
 
 interface TreatmentCardProps {

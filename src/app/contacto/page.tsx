@@ -2,6 +2,7 @@ import React from "react";
 import { oregano } from "../ui/font";
 import { Link } from "@heroui/link";
 import { Button } from "@heroui/button";
+import NextLink from "next/link";
 import Image from "next/image";
 import pencil from "../../../public/pencil.png";
 import phone from "../../../public/telephone.png";
@@ -19,7 +20,7 @@ const Contacto = () => {
         <div className="flex flex-col justify-center items-center mb-20">
           <Button
             startContent={<Image alt="pencil" src={pencil} width={20} />}
-            as={Link}
+            as={NextLink}
             href="/google-calendar"
             variant="solid"
             size="lg"

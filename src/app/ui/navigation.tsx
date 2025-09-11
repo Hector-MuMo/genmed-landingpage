@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -9,12 +9,12 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
-  Link,
   Button,
 } from "@heroui/react";
 import Image from "next/image";
 import Logo from "../../../public/logo.png";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 const MedLogo = () => {
   return (
@@ -31,11 +31,10 @@ const MedLogo = () => {
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
-  
   const menuItems = ["Nosotros", "Servicios", "Contacto"];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
         <NavbarBrand>
           <Link href="/">
@@ -90,12 +89,9 @@ const Navigation = () => {
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
-              className="w-full"
-              color={
-                pathname === `/${item.toLowerCase()}` ? "success" : "foreground"
-              }
+              onClick={() => setIsMenuOpen(false)}
+              className={`w-full ${pathname === `/${item.toLowerCase()}` ? "text-green-500" : "text-stone-800"}`}
               href={`/${item.toLowerCase()}`}
-              size="lg"
             >
               {item}
             </Link>

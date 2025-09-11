@@ -24,7 +24,7 @@ export default function Home() {
             </Button>
           </div>
           </div>
-          <div className="sm:bg-[url(../../public/Heroimg-home.png)] sm:bg-cover sm:bg-no-repeat bg-center sm:w-1/2 sm:h-smvh lg:w-[800px]"></div>
+          <div className="sm:bg-[url(../../public/Heroimg-home.png)] sm:bg-cover sm:bg-no-repeat bg-center sm:w-1/2 sm:h-svh lg:w-[800px]"></div>
         </div>
         <p className="bg-white/30 rounded-lg max-w-1/2 text-amber-50 text-lg text-center sm:text-stone-400">
           Transformamos sonrisas y mejoramos tu{" "}

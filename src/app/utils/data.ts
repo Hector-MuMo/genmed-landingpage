@@ -1,7 +1,7 @@
 export async function fetchReviews() {
   try {
     const res = await fetch(
-      "https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ52huoqLZz4UR-j-v3WhkXB8&key=AIzaSyBCHq0zhSj5DEXgfipI_t_bldBpaDeDaEc",
+      "https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJ52huoqLZz4UR-j-v3WhkXB8&key=xxx",
       {
         method: "GET",
       }

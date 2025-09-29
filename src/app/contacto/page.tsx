@@ -9,12 +9,17 @@ import phone from "../../../public/telephone.png";
 import whatsapp from "../../../public/whatsapp.png";
 import facebook from "../../../public/facebook.png";
 import instagram from "../../../public/instagram.png";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contacto"
+};
 
 const Contacto = () => {
   return (
-    <div className="bg-[url(../../public/Heroimg-contact.png)] bg-cover sm:bg-none min-h-dvh p-2 pb-2">
-      <main>
-        <section className="sm:hidden">
+    <div className="bg-[url(../../public/Heroimg-contact.png)] bg-cover sm:bg-none h-[calc(100vh-4rem)] p-2 pb-2">
+      <main className="h-full">
+        <section className="sm:hidden h-full">
           <h1 className={`${oregano.className} text-6xl text-amber-50`}>
             Contacto
           </h1>
@@ -78,7 +83,7 @@ const Contacto = () => {
             </div>
           </div>
         </section>
-        <section className="hidden sm:grid sm:grid-cols-3">
+        <section className="hidden sm:grid sm:grid-cols-3 h-full">
           <div className="sm:flex sm:flex-col sm:justify-center sm:items-center">
             <h1 className={`${oregano.className} text-6xl text-stone-800`}>
               Contacto
@@ -107,7 +112,7 @@ const Contacto = () => {
               </Button>
             </div>
           </div>
-          <div className="sm:bg-[url(../../public/Heroimg-contact.png)] sm:bg-cover bg-center sm:h-svh"></div>
+          <div className="sm:bg-[url(../../public/Heroimg-contact.png)] sm:bg-cover bg-center"></div>
           <div className="sm:flex sm:flex-col sm:justify-center sm:items-center">
             <div className="flex flex-col justify-center items-center p-4">
               <h3 className="text-2xl text-stone-600 text-center">Ubicación</h3>

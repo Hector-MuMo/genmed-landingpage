@@ -1,10 +1,18 @@
 import React from "react";
 import { oregano } from "../ui/font";
+//import { fetchReviews } from "../utils/data";
+import { Metadata } from "next";
 
-const Nosotros = () => {
+export const metadata: Metadata = {
+  title: "Nosotros"
+};
+
+const Nosotros = async () => {
+  //const reviews = await fetchReviews();
+  
   return (
-    <div className="bg-[url(../../public/Heroimg-us.png)] bg-cover sm:bg-none min-h-dvh p-2 pb-2">
-      <main>
+    <div className="bg-[url(../../public/Heroimg-us.png)] bg-cover sm:bg-none h-[calc(100vh-4rem)] p-2 pb-2">
+      <main className="h-full">
         <div className="sm:hidden">
           <h1
             className={`${oregano.className} text-6xl text-amber-50 sm:text-stone-800`}
@@ -29,13 +37,13 @@ const Nosotros = () => {
             </p>
           </div>
         </div>
-        <div className="hidden sm:grid sm:grid-cols-3">
+        <div className="hidden h-full sm:grid sm:grid-cols-3">
           <div className="flex justify-center items-center">
             <h2 className="mb-8 sm:text-4xl lg:text-5xl text-center text-stone-600 sm:px-5">
               Más de [X] Años Creando Sonrisas
             </h2>
           </div>
-          <div className="sm:bg-[url(../../public/Heroimg-us.png)] sm:bg-cover bg-center sm:h-svh">
+          <div className="sm:bg-[url(../../public/Heroimg-us.png)] sm:bg-cover bg-center">
             <h1
               className={`${oregano.className} text-6xl text-amber-50 sm:text-stone-800 text-center`}
             >
